@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >   <!--totally, height 480dip, width 320dip, but it seems not -->
+		   
+		    <ImageView android:id="@+id/lomo_error"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content" 		           
+		            android:background="@+drawable/error" />    <!-- this is the return button -->
+		            
+		    <TextView
+		        	android:layout_width="230dp"
+		        	android:text="Lomo"
+		        	android:gravity="center_horizontal"
+		        	android:layout_height="wrap_content"/>
+		       		
+		    <ImageView android:id="@+id/lomo_check"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content" 
+		            android:background="@+drawable/check"
+		            />   <!-- this is the save button -->
+    </LinearLayout>
+
+<RelativeLayout
+		        android:layout_width="fill_parent"
+	            android:layout_height="310dip">
+		        
+		
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/display"
+	        android:layout_centerInParent="true"/>
+	    <ProgressBar 
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:id="@+id/lomoBar"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+		
+		
+		    </RelativeLayout>
+ 
+
+	
+    <HorizontalScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:src="@drawable/red" 
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:padding="10dp"
+        android:src="@drawable/green" />
+            
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:src="@drawable/blue" 
+        android:padding="10dp"/>
+                
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:src="@drawable/red_green" 
+        android:padding="10dp"/>
+                    
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:src="@drawable/red_blue" 
+        android:padding="10dp"/>
+                        
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:src="@drawable/green_blue"
+        android:padding="10dp"/>
+
+     </LinearLayout>
+     </HorizontalScrollView>
+</LinearLayout>

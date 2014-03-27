@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="32dp" 
+	    android:text="@string/hello"
+	    android:gravity="center"
+	    android:id="@+id/tv"
+	    />
+    <EditText 
+        android:id="@+id/et" 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:lines="5" 
+    	android:maxLength="50"/>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        >
+    
+    	<Button 
+        	android:id="@+id/gobtn" 
+        	android:layout_width="140dip"
+    		android:layout_height="35dp" 
+    		android:textColor="#FFFFFFFF"
+			android:background="#00000000"
+    		android:text="Go"/>
+    
+    	<Button 
+        	android:id="@+id/clearbtn" 
+        	android:layout_width="140dip"
+    		android:layout_height="35dp"
+    		android:textColor="#FFFFFFFF"
+			android:background="#00000000" 
+    		android:text="Clear"/>
+    	
+    	 </LinearLayout>
+</LinearLayout>

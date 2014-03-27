@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>  
+ 
+<TabHost   
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@android:id/tabhost"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_home">   <!-- in my experience, this must be outermost -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+		android:background="@android:color/black">   <!--totally, height 480dip, width 320dip, but it seems not -->
+		    <TextView
+		        android:layout_width="160dip"
+		        android:layout_height="fill_parent"
+		        android:text="PicsToaster"
+		        android:paddingLeft="15dip"
+		        android:textStyle="bold"
+		        android:textSize="20dip" />    <!-- this is the tile in upper left corner -->
+		    <Button android:id="@+id/btn_about"  
+		            android:layout_width="80dip"  
+		            android:layout_height="fill_parent" 
+		            android:layout_weight="1"
+		            android:textSize="15dip"
+		            android:text="about" 
+		            android:gravity="center_horizontal"/>    <!-- this is the about button -->
+		            
+		    <Button android:id="@+id/btn_setting"  
+		            android:layout_width="80dip"  
+		            android:layout_height="fill_parent" 
+		            android:layout_weight="1"
+		            android:gravity="center_horizontal"
+		            android:textSize="15dip"
+		            android:text="settings" />   <!-- this is the setting button -->
+    </LinearLayout> 
+    
+    	<!-- in my experience, there must be a container, otherwise the tabs will not be bottom-->
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="420dip"
+           android:orientation="vertical"
+           android:layout_gravity="bottom"  >
+
+           <FrameLayout
+               android:id="@android:id/tabcontent"
+               android:layout_width="fill_parent"
+               android:layout_height="360dip">
+           </FrameLayout>   <!-- it is for displaying content -->
+
+           <TabWidget
+               android:id="@android:id/tabs"
+               android:layout_width="fill_parent"
+               android:layout_height="60dp"
+               android:gravity="bottom" >   <!-- tabs button -->
+           </TabWidget>
+       </LinearLayout>
+
+</TabHost>  

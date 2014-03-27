@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >   <!--totally, height 480dip, width 320dip, but it seems not -->
+		   
+		    <ImageView android:id="@+id/fashion_error"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content" 
+		            android:background="@+drawable/error" />    <!-- this is the return button -->
+		            
+		    <TextView
+		        	android:layout_width="230dp"
+		        	android:text="Fashion"
+		        	android:gravity="center_horizontal"
+		        	android:layout_height="wrap_content"/>
+		       		
+		    <ImageView android:id="@+id/fashion_check"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content" 
+		            android:background="@+drawable/check"/>   <!-- this is the save button -->
+    </LinearLayout>
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="310dip" >
+       	
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/display"
+	        android:layout_centerInParent="true" />
+	    
+	    <ProgressBar 
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:id="@+id/fashionBar"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+	    </RelativeLayout>
+    
+     	<HorizontalScrollView 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content">
+    	<LinearLayout 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+	    	<ImageView
+	        	android:id="@+id/black_white"
+	        	android:layout_width="120dp"
+	        	android:layout_height="110dp"
+	        	android:src="@drawable/black_white" 
+	        	android:padding="10dp"/>
+	
+	    	<ImageView
+	        	android:id="@+id/film"
+	        	android:layout_width="120dp"
+	        	android:layout_height="110dp"
+	        	android:padding="10dp"
+	        	android:src="@drawable/film" />
+	            
+	    	<ImageView
+	        	android:id="@+id/reminiscence"
+	        	android:layout_width="120dp"
+	        	android:layout_height="110dp"
+	        	android:src="@drawable/reminiscence" 
+	        	android:padding="10dp"/>
+
+     </LinearLayout>
+     </HorizontalScrollView>
+</LinearLayout>

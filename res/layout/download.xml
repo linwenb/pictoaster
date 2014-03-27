@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_down"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:background="@android:color/black"> 
+	   <Button 
+	       android:id="@+id/return_download"
+	       android:layout_width="wrap_content"
+	       android:layout_height="35dp"
+	       android:text="Return"
+	       android:gravity="center"/>
+   </LinearLayout>
+   <TextView 
+       
+       android:layout_height="375dp"
+       android:layout_width="fill_parent"/>
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal">
+       
+       <Button
+	        android:id="@+id/download1"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:text="Simple Frame"
+	        android:textColor="#FFFFFFFF"
+	        android:background="#88888888"/>
+
+	    <Button
+	        android:id="@+id/download2"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:text="Special Frame"
+	        android:textColor="#FFFFFFFF"
+	        android:background="#77777777"/>
+	            
+	    <Button
+	        android:id="@+id/download3"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:text="Montage Template"
+	        android:textColor="#FFFFFFFF"
+	        android:background="#66666666"/>
+	    
+	    <Button
+	        android:id="@+id/download4"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:text="Bubble"
+	        android:textColor="#FFFFFFFF"
+	        android:background="#55555555"/>
+   </LinearLayout>
+   
+</LinearLayout>

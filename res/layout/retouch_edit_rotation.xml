@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >   <!--totally, height 480dip, width 320dip, but it seems not -->
+		   
+		    <ImageView android:id="@+id/rotation_error"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content" 
+		        
+		           
+		            android:background="@+drawable/error" />    <!-- this is the return button -->
+		            
+		    <TextView
+		        	android:layout_width="230dp"
+		        	android:text="Rotation"
+		        	android:gravity="center_horizontal"
+		        	android:layout_height="wrap_content"/>
+		       		
+		    <ImageView android:id="@+id/rotation_check"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content" 
+		            
+		        
+		            android:background="@+drawable/check"
+		            />   <!-- this is the save button -->
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="375dp">
+        
+	    <ImageView
+	        android:id="@+id/imgResult"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/ic_launcher" />
+
+     </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom" >
+	    
+        <TextView 
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        
+		    <ImageButton android:id="@+id/button1"
+				android:src="@drawable/rotatel"
+				android:layout_width="42dp"
+				android:layout_height="wrap_content" />
+		    
+		    <TextView 
+            android:layout_width="56dip"
+            android:layout_height="wrap_content"
+            android:text=""/>
+		    
+		    <ImageButton android:id="@+id/button2"
+				android:src="@drawable/rotater"
+				android:layout_width="42dp"
+				android:layout_height="wrap_content" />
+		    
+     </LinearLayout>
+ 
+</LinearLayout>

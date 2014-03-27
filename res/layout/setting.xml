@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	
+    <TextView
+    	android:text="Settings"
+    	android:textSize="20dip"
+    	android:gravity="center"
+    	android:layout_width="fill_parent"
+    	android:textStyle="bold"
+		android:layout_height="60dp"/>
+		
+	<Button
+		android:id="@+id/btn_clean" 
+	    android:layout_width="fill_parent"
+	    android:gravity="center"
+		android:layout_height="40dp" 
+		android:text="Clean Records"
+		android:textSize="15dip" />
+		
+	<LinearLayout
+		android:orientation="horizontal" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+	    <Button 
+		    android:id="@+id/btn_ok" 
+		    android:layout_width="120dp"
+		    android:gravity="center"
+			android:layout_height="40dp" 
+			android:text="OK"
+			android:textSize="15dip" />
+			
+		<Button 
+		    android:id="@+id/btn_cancel" 
+		    android:layout_width="120dp"
+		    android:gravity="center"
+			android:layout_height="40dp" 
+			android:text="Cancel"
+			android:textSize="15dip" />
+			
+		</LinearLayout>
+    
+</LinearLayout>
+

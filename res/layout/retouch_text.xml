@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >   <!--totally, height 480dip, width 320dip, but it seems not -->
+		   
+		    <ImageView android:id="@+id/text_error"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/error" />    <!-- this is the return button -->
+		            
+		    <TextView
+		        	android:layout_width="230dp"
+		        	android:text="Text"
+		        	android:gravity="center_horizontal"
+		        	android:layout_height="wrap_content"/>
+		       		
+		    <ImageView 
+		        	android:id="@+id/text_check"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content" 
+		            android:background="@drawable/check"/>
+    </LinearLayout>
+	
+    <FrameLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="375dip">
+		
+        <RelativeLayout 
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+		
+	        <ImageView
+	            android:id="@+id/img"    
+	        	android:layout_width="fill_parent"   
+	        	android:layout_height="fill_parent" 
+	        	android:adjustViewBounds="true"    
+	      		android:scaleType="centerInside"
+	      		android:layout_centerInParent="true"/> 
+		
+			<TextView 
+				android:id="@+id/draw" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"/>
+		
+		</RelativeLayout>
+		</FrameLayout>
+	
+	<ScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="50dp"
+        android:scrollbars="vertical"
+        android:layout_gravity="center">
+		
+	 	<LinearLayout
+	 	    android:orientation="vertical"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content" >
+			<TextView 
+			    android:id="@+id/rotate"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+	 	        android:textStyle="bold"
+	 	        android:textSize="12dp"
+			    android:text="ROTATE"/>
+			
+    	    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:splitMotionEvents="true">
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="5dip"
+		            android:paddingRight="5dip"
+	            />
+		        <SeekBar
+		            android:orientation="horizontal"
+		            android:layout_weight="1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxHeight="12dp"  
+		    		android:minHeight="12dp"
+		    		android:progressDrawable="@drawable/seekbar_style"
+		            android:id="@+id/rotationZ"	/>
+			</LinearLayout>
+			
+    	    <TextView
+	 	        android:layout_width="fill_parent"
+	 	        android:layout_height="10dp"
+	 	        android:text=" "/>
+        	
+	 	    <TextView
+	 	        android:id="@+id/scale"
+	 	        android:layout_width="wrap_content"
+	 	        android:layout_height="wrap_content"
+	 	        android:textStyle="bold"
+	 	        android:textSize="12dp"
+	 	        android:text="SCALE"/>
+	
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+		        android:splitMotionEvents="true" >     
+				<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="5dip"
+		            android:paddingRight="5dip"
+		            android:textStyle="bold"
+		            android:id="@+id/sca" />
+				<SeekBar
+		            android:orientation="horizontal"
+		            android:layout_weight="1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxHeight="12dp"  
+		    		android:minHeight="12dp"
+		    		android:progressDrawable="@drawable/seekbar_style"
+		            android:id="@+id/size" />
+	        </LinearLayout>
+	        <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:splitMotionEvents="true" >        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="5dip"
+		            android:paddingRight="5dip"
+		            android:textSize="12dp"
+		            android:textStyle="bold"
+		            android:text="X"  />
+		        <SeekBar
+		            android:orientation="horizontal"
+		            android:layout_weight="1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxHeight="12dp"  
+		    		android:minHeight="12dp"
+		    		android:progressDrawable="@drawable/seekbar_style"
+		            android:id="@+id/scaleX"  />
+		     </LinearLayout>
+					        
+			 <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:splitMotionEvents="true" >        
+		        <TextView
+		            android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+		            android:paddingLeft="5dip"
+		            android:paddingRight="5dip"
+		            android:textSize="12dp"
+		            android:textStyle="bold"
+		            android:text="Y"
+			        />
+		        <SeekBar
+		            android:orientation="horizontal"
+		            android:layout_weight="1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxHeight="12dp"  
+		    		android:minHeight="12dp"
+		    		android:progressDrawable="@drawable/seekbar_style"
+		            android:id="@+id/scaleY"
+		        />
+		    </LinearLayout>
+		</LinearLayout>
+    </ScrollView>
+	
+	<TextView 
+        android:id="@+id/space"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:text=" "/>
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom" >
+	
+    	<Button 
+	    	android:id="@+id/btn_edit_text"     
+	    	android:layout_width="105dp"
+	    	android:gravity="center"
+			android:layout_height="35dp" 
+			android:text="Edit text"
+			android:textColor="#FFFFFFFF"
+			android:background="#00000000"
+			android:textSize="14dip" />
+    
+		<Button 
+	    	android:id="@+id/btn_color_picker" 
+	    	android:layout_width="105dp"
+	    	android:gravity="center"
+			android:layout_height="35dp" 
+			android:text="Change Color"
+			android:textColor="#FFFFFFFF"
+			android:background="#00000000"
+			android:textSize="14dip" />
+		
+		<Button 
+	    	android:id="@+id/btn_bubble" 
+	    	android:layout_width="105dp"
+	    	android:gravity="center"
+			android:layout_height="35dp" 
+			android:text="Bubbles"
+			android:textColor="#FFFFFFFF"
+			android:background="#00000000"
+			android:textSize="14dip" />
+
+	
+	</LinearLayout>
+</LinearLayout>

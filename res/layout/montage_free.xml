@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@+drawable/error" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@+drawable/check" />
+    </LinearLayout>
+	
+    <AbsoluteLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="345dip"
+		android:id="@+id/result">
+	    <ImageView
+		    android:id="@+id/img1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_x="0dip"
+		    android:layout_y="5dip"/>
+	        
+		<ImageView
+		    android:id="@+id/img2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="160dip"
+		    android:layout_y="5dip"/>
+		<ImageView
+		    android:id="@+id/img3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_x="80dip"
+		    android:layout_y="165dip"/>"
+	</AbsoluteLayout>
+	
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="horizontal" >
+   		<TextView
+   		    android:gravity="center_horizontal"
+	        android:layout_width="160dip"
+	    	android:layout_height="wrap_content"
+		    android:text="Scale"/>
+		<TextView
+		    android:gravity="center_horizontal"
+		    android:text="Rotation"
+		    android:layout_width="160dip"
+	    	android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="horizontal" >
+   		<SeekBar
+	        android:layout_width="160dip"
+	    	android:layout_height="25dip"
+	    	android:id="@+id/scale1"/>
+		<SeekBar
+	        android:layout_width="160dip"
+	    	android:layout_height="25dip"
+	    	android:id="@+id/rotation1"/>
+	</LinearLayout>
+		
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="horizontal" >
+   		<SeekBar
+	        android:layout_width="160dip"
+	    	android:layout_height="25dip"
+	    	android:id="@+id/scale2"/>
+		<SeekBar
+	        android:layout_width="160dip"
+	    	android:layout_height="25dip"
+	    	android:id="@+id/rotation2"/>
+	</LinearLayout>
+	
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="horizontal" >
+   		<SeekBar
+	        android:layout_width="160dip"
+	    	android:layout_height="25dip"
+	    	android:id="@+id/scale3"/>
+		<SeekBar
+	        android:layout_width="160dip"
+	    	android:layout_height="25dip"
+	    	android:id="@+id/rotation3"/>
+	</LinearLayout>
+	
+	<Button 
+	    android:id="@+id/btn_change_bg" 
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="bottom"
+	    android:gravity="center"
+		android:layout_height="30dp" 
+		android:text="Change Background"
+		android:textColor="#FFFFFFFF"
+		android:background="#00000000" />
+</LinearLayout>

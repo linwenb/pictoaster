@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >"
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >   <!--totally, height 480dip, width 320dip, but it seems not -->
+		   
+		    <Button android:id="@+id/btn_return"  
+		            android:layout_width="58dip"  
+		            android:layout_height="fill_parent" 
+		            android:layout_weight="1"
+		            android:textSize="13dip"
+		            android:layout_gravity="center"
+		            android:gravity="center_horizontal"
+		            android:text="return" />    <!-- this is the return button -->
+		            
+		    <TextView
+		        	android:layout_width="198dip"
+		        	android:layout_height="fill_parent"/>
+		       		
+		    <Button android:id="@+id/btn_save"  
+		            android:layout_width="54dip"  
+		            android:layout_height="fill_parent" 
+		            android:layout_weight="1"
+		            android:gravity="center_horizontal"
+		            android:textSize="13dip"
+		            android:layout_gravity="center"
+		            android:text="save" />   <!-- this is the save button -->
+    </LinearLayout>
+    		  
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="420dip"
+        >   <!--totally, height 480dip, width 320dip, but it seems not -->
+	
+    <ImageView
+		android:id="@+id/imageView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="fitCenter"
+		android:layout_centerInParent="true"  />
+       
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom" >
+		    
+		    <ImageView
+		        android:id="@+id/image1"
+		        android:layout_width="53dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/edit"/>
+		
+		    <ImageView
+		        android:id="@+id/image2"
+		        android:layout_width="53dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/tone" />
+		            
+		    <ImageView
+		        android:id="@+id/image3"
+		        android:layout_width="53dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/blur"/>
+		                
+		    <ImageView
+		        android:id="@+id/image4"
+		        android:layout_width="53dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/effect"/>
+		                    
+		    <ImageView
+		        android:id="@+id/image5"
+		        android:layout_width="53dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/frame"/>
+		                        
+		    <ImageView
+		        android:id="@+id/image6"
+		        android:layout_width="53dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/text"/>
+     </LinearLayout>
+     
+</LinearLayout>
